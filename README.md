@@ -33,7 +33,7 @@ cd short-links
 **3. Запустить JAR-файл:**
 
 ```sh
-java -jar short-links-maker.jar
+java -jar short-links.jar
 ```
 
 **4. Следовать инструкциям на экране:**
