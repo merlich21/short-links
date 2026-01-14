@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class shortLinksMaker {
+public class shortLinks {
     // Поля
     private final Map<String, UserData> users = new HashMap<>();
     private final Properties config = new Properties();
@@ -28,7 +28,7 @@ public class shortLinksMaker {
     private String currentUserUuid;
 
     // Методы для старта работы с программой
-    public shortLinksMaker() {
+    public shortLinks() {
         loadConfig();  // Загрузка конфигурации
         loadData(); // Загрузка данных из файла
         removeExpiredLinks(); // Удаление устаревших ссылок
@@ -612,7 +612,7 @@ public class shortLinksMaker {
     }
 
     public static void main(String[] args) {
-        shortLinksMaker shortener = new shortLinksMaker();
+        shortLinks shortener = new shortLinks();
         Scanner scanner = new Scanner(System.in);
 
         // Аутентификация при запуске
